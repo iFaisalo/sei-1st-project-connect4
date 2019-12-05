@@ -68,10 +68,16 @@ class Connect4 {
         $lastEmptyCell.data ('row'),
         $lastEmptyCell.data ('col')
       )
+      if (!$('.col.empty')[0]) {
+        that.isGameOver = true;
+      }
       if (winner) { // ending the game and announce the winner ..
         that.isGameOver = true;
         alert (`game over, ${that.player} wins!`)
         $('.col.empty').removeClass ('empty');
+        return;
+      } else if (that.isGameOver) { // tie breaker ..
+        alert (`game over, it's a TIE!`)
         return;
       }
 
@@ -112,14 +118,14 @@ class Connect4 {
         checkDirection (directionA) +
         checkDirection (directionB);
         if (total >= 4) {
-          return that.player;
+          return true;
         } else {
-          return null;
+          return false;
         }
     }
 
     function checkDiagonalBLtoTR () { // diagonal checking method ..
-      return checkWin ({i: 1, j: -1}, {i: 1, j: 1});
+      return checkWin ({i: -1, j: -1}, {i: 1, j: 1});
     }
 
     function checkDiagonalTLtoBR () { // diagonal checking method ..

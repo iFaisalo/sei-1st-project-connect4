@@ -24,8 +24,6 @@ code the game accordingly finally I found a tutorial in YouTube and I follow it.
 last but not least ..
 here's the deployed link for my project ..
 
-I didn't succeed to make a **TIE**
-
 https://ifaisalo.github.io/sei-1st-project-connect4/
 
 Thank you, GA for giving me the opportunity to be < / >
