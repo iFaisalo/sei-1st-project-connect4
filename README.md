@@ -24,15 +24,17 @@ the project about coding a Connect 4 Classic Game ..
 - presentation:
   * during the presentation, Mr. Saad asked me regarding a specific code line
   > const this = that
+  
   my answer was ’that's what youtube guy said’ I said.
   so now here's the right answer:
     * for changing the scope of “this” inside a function within a function ..
+
   after I saw my colleague's project presentation, with a little help from my brother I,
   reviewed my code again and found:
     * a bug in my diagonal checking method ..
     * **TIE** method ..
   both were fixed ..
-  
+
 last but not least ..
 here's the deployed link for my project ..
 
